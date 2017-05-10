@@ -13,12 +13,12 @@ void ofApp::setup(){
     };
     
     addGui();
-    light.setPointLight();
-    // see light docs http://openframeworks.cc/documentation/gl/ofLight/
-    // https://forum.openframeworks.cc/t/understanding-oflight/26230/3
-    light.setup();
-    light.enable();
-    light.setPosition(lightPos);
+light.setPointLight();
+// see light docs http://openframeworks.cc/documentation/gl/ofLight/
+// https://forum.openframeworks.cc/t/understanding-oflight/26230/3
+light.setup();
+light.enable();
+light.setPosition(lightPos);
 }
 
 //--------------------------------------------------------------

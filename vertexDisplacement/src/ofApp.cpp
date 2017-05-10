@@ -64,7 +64,7 @@ void ofApp::update(){
 void ofApp::draw(){
     //new
     ofSetColor(255, 0, 0);
-    ofDrawCircle(ofGetWidth()/2, ofGetHeight()/2, smoothedVolume * radius);
+    //ofDrawCircle(ofGetWidth()/2, ofGetHeight()/2, smoothedVolume * radius);
     line.draw();
 
     //old
@@ -73,11 +73,12 @@ void ofApp::draw(){
 
     shader.setUniform3f("lightPos", light.getPosition());
     shader.setUniform4f("materialColor", ofColor(materialColor));
-    shader.setUniform1f("displaceAmount", displaceAmount);
+    shader.setUniform1f("displaceAmount", smoothedVolume * radius);
+    
     sphere.draw();
     
     shader.end();
-    light.draw();
+    //light.draw();
     cam.end();
 
     maybeDrawGui();

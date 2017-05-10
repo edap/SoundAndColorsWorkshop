@@ -3,7 +3,7 @@
 uniform mat4 modelViewProjectionMatrix;
 uniform mat4 modelViewMatrix;
 uniform mat4 modelMatrix;
-//uniform mat4 normalMatrix;
+uniform mat4 normalMatrix;
 
 uniform float displaceAmount;
 in vec4 position;
@@ -14,8 +14,7 @@ out vec3 vNormal;
 
 void main() {
     vNormal = normal.xyz;
-    vec3 newPosition = position.xyz + vNormal * displaceAmount;
-    //vPosition = modelViewProjectionMatrix * vec4( newPosition, 1.0 );
-    gl_Position = vPosition;
+    // VPosition it is used for the light calculation
+    vPosition = position;
     gl_Position = modelViewProjectionMatrix * position;
 }

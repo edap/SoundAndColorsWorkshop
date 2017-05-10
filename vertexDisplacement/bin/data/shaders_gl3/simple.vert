@@ -3,7 +3,6 @@
 uniform mat4 modelViewProjectionMatrix;
 uniform mat4 modelViewMatrix;
 uniform mat4 modelMatrix;
-//uniform mat4 normalMatrix;
 
 uniform float displaceAmount;
 in vec4 position;
@@ -14,8 +13,7 @@ out vec3 vNormal;
 
 void main() {
     vNormal = normal.xyz;
+    vPosition = position;
     vec3 newPosition = position.xyz + vNormal * displaceAmount;
-    //vPosition = modelViewProjectionMatrix * vec4( newPosition, 1.0 );
-    gl_Position = vPosition;
-    gl_Position = modelViewProjectionMatrix * position;
+    gl_Position = modelViewProjectionMatrix * vec4( newPosition, 1.0 );
 }

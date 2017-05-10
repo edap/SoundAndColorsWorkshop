@@ -28,7 +28,7 @@ class ofApp : public ofBaseApp{
 
     //3d scene
     ofSpherePrimitive sphere;
-    ofVec3f lightPos = ofVec3f(200,200,200);
+    ofVec3f lightPos = ofVec3f(130,130,130);
     ofLight light;
     ofEasyCam cam;
 
