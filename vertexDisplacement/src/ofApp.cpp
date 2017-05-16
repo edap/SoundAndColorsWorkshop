@@ -26,14 +26,14 @@ void ofApp::setup(){
     ofEnableSmoothing();
     ofBackground(0,0,0);
 
+    //AUDIO SETUP
     sample.load(ofToDataPath("sound.wav"));
     sampleRate 	= 44100;
     bufferSize	= 512;
-
     ofxMaxiSettings::setup(sampleRate, 2, bufferSize);
     ofSoundStreamSetup(2,2,this, sampleRate, bufferSize, 4);
+    //END AUDIO SETUP
     ofSetBackgroundColor(255, 200, 0);
-
     volHistory.assign(ofGetWidth(), 0.0);
 
 }

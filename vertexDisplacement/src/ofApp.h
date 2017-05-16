@@ -44,12 +44,9 @@ class ofApp : public ofBaseApp{
     ofxFloatSlider displaceAmount;
     ofxPanel gui;
 
-    //audio
+    //audio param
     ofParameter<bool> enableSmooth = false;
     ofParameter<float> smoothedVal;
-    ofParameter<int> radius;
-    ofParameter<int> lineScale;
-
     int		bufferSize;
     int		sampleRate;
     ofxMaxiSample sample;
@@ -58,7 +55,11 @@ class ofApp : public ofBaseApp{
     double outputs[2];
     float smoothedVolume = 0;
     float scaledVolume = 0;
+    //end audio param
+
     vector <float> volHistory;
+    ofParameter<int> radius;
+    ofParameter<int> lineScale;
     ofPolyline line;
 
 };
