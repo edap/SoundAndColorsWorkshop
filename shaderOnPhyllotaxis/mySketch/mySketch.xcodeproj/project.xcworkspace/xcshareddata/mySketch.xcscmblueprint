@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1B2548D2BB859D074478CE17809CE1C447A2D57A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BA58261282FAA6F3D1C0EA703F091798F9A311A7" : 9223372036854775807,
+    "1B2548D2BB859D074478CE17809CE1C447A2D57A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B26AD230-E018-48D5-8158-30891DA5F3E3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BA58261282FAA6F3D1C0EA703F091798F9A311A7" : "..\/addons\/ofxPhyllotaxis",
+    "1B2548D2BB859D074478CE17809CE1C447A2D57A" : "SoundAndColorsWorkshop\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "mySketch",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "shaderOnPhyllotaxis\/mySketch\/mySketch.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:edap\/SoundAndColorsWorkshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1B2548D2BB859D074478CE17809CE1C447A2D57A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:edap\/ofxPhyllotaxis.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA58261282FAA6F3D1C0EA703F091798F9A311A7"
+    }
+  ]
+}
